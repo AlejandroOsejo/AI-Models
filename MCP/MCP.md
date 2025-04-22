@@ -136,17 +136,21 @@ Para utilizar las capacidades de MCP con Claude Desktop, necesitarás:
 
 ##### Filesystem MCP
 
-Dentro de **mcpServers** añadimos lo siguiente:
+Reemplazamos el contenido del archivo por lo siguiente:
 
 ```
-"filesystem": {
-   "command": "npx",
-   "args": [
-      "-y",
-     "@modelcontextprotocol/server-filesystem",
-      "/Users/username/Desktop",
-     "/path/to/other/allowed/dir"
-   ]
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/username/Desktop",
+        "/path/to/other/allowed/dir"
+      ]
+    }
+  }
 }
 ```
 
